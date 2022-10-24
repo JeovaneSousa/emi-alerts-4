@@ -30,7 +30,7 @@ class SendMaterialViewController: UIViewController {
         
         let alert = UIAlertController(title: "Quase lá!", message: message, preferredStyle: .actionSheet)
         
-        alert.addAction(UIAlertAction(title: "Confirmar", style: .default, handler:{(alert: UIAlertAction!) in self.showFinishedAlert()}))
+        alert.addAction(UIAlertAction(title: "Confirmar", style: .default, handler:{(action: UIAlertAction!) in self.showFinishedAlert()}))
         
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         
